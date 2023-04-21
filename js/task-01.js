@@ -1,15 +1,15 @@
-const list = categories.children
+const list = document.querySelectorAll('#categories .item')
 
 // Вивід кількості категорій у консолі
 
-let itemsInList = list.length
-console.log(`Number of categories: ${itemsInList}`);
+console.log(`Number of categories: ${list.length}`);
 
 // Вивід назви і кількості елементів у списку
 
-list.forEach(item => {
-    const title = item.querySelector('h2');
-  if (title) {
-    console.log(`Category: ${title.textContent}`);
-}
-});
+
+list.forEach ((category) => {
+  let title = category.querySelector('h2').textContent;
+  let cutEl = category.querySelectorAll('li').length;
+  console.log(`Category: ${title}`);
+  console.log(`Elements: ${cutEl}`);
+})

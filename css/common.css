@@ -22,3 +22,32 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+.button-hometask {
+  background-color: rgba(255, 0, 0, 0.574);
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 15px;
+  
+}
+
+.a-btn-hw{
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+.gallery {
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.imagesList {
+  border-radius: 15px;
+}
